@@ -1,3 +1,2 @@
 # ipcamera
-Connect to Amcrest Camera to see what i can do with it
-Initial to connect to amcrest IP2M camera and get a snapshot of what's outside
+Connect to Amcrest Camera (IP2M) to get a snapshot of what's outside
