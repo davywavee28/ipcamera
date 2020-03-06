@@ -25,7 +25,7 @@ class amcrest:
         self.path = path
         
     def get_snapshot(self):
-        snapshot = requests.get("http://" + self.ip + "/cgi-bin/snapshot.cgi?channel=1", auth = HTTPDigestAuth('admin','Snoopy62*'))
+        snapshot = requests.get("http://" + self.ip + "/cgi-bin/snapshot.cgi?channel=1", auth = HTTPDigestAuth('admin','12345'))
         ltime = time.localtime()
         cdate = str(ltime[0])+str(ltime[1])+str(ltime[2])+str(ltime[3])+str(ltime[4])+str(ltime[5])
         fname = self.path + "/" + "snapshot" + cdate  + ".jpg"
