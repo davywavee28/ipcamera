@@ -35,13 +35,13 @@ class amcrest:
         return(snapshot.status_code)
 
 
-try:
-    while True:       
+while True:
+    try:
         snap1 = amcrest(addr, dir)
         status = snap1.get_snapshot()
         print(status)
         time.sleep(5)
         sys.exit
 
-except KeyboardInterrupt:
-    print("all done.")
+    except KeyboardInterrupt:
+        print("all done.")
